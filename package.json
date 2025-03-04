@@ -1,0 +1,11 @@
+{
+  "name": "nativewind-monorepo",
+  "packageManager": "yarn@4.7.0",
+  "scripts": {
+    "native": "cd apps/native && yarn start"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
