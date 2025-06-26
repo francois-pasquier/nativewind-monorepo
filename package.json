@@ -1,11 +1,16 @@
 {
   "name": "nativewind-monorepo",
-  "packageManager": "yarn@4.7.0",
+  "packageManager": "pnpm@9.15.2",
   "scripts": {
-    "native": "cd apps/native && yarn start"
+    "native": "cd apps/native && pnpm start",
+    "web": "cd apps/web && pnpm dev",
+    "storybook": "cd apps/storybook && pnpm storybook",
+    "storybook:web": "cd apps/storybook && pnpm storybook:web",
+    "nuke": "rm -rf node_modules && rm -rf apps/native/node_modules && rm -rf apps/storybook/node_modules && rm -rf packages/app/node_modules"
   },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "pnpm": {
+    "overrides": {
+      "react-docgen-typescript": "2.2.2"
+    }
+  }
 }

@@ -7,11 +7,11 @@ This is an example of multiple different packages to show how they can be used w
 Start react native web storybook:
 
 ```
-yarn storybook:web
+pnpm storybook:web
 ```
 
 build react native web storybook:
 
 ```sh
-yarn build-storybook
+pnpm build-storybook
 ```

@@ -16,6 +16,7 @@
     "storybook:android": "cross-env EXPO_PUBLIC_STORYBOOK_ENABLED='true' expo start --android"
   },
   "dependencies": {
+    "app": "workspace:*",
     "@gorhom/bottom-sheet": "^5.0.5",
     "@react-native-async-storage/async-storage": "2.1.2",
     "@react-native-community/datetimepicker": "8.3.0",
@@ -58,19 +59,5 @@
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
   },
-  "resolutions": {
-    "react-docgen-typescript": "2.2.2"
-  },
-  "overrides": {
-    "react-docgen-typescript": "2.2.2"
-  },
-  "pnpm": {
-    "overrides": {
-      "react-docgen-typescript": "2.2.2"
-    }
-  },
-  "private": true,
-  "patchedDependencies": {
-    "expo-image@2.0.3": "patches/expo-image@2.0.3.patch"
-  }
+  "private": true
 }
