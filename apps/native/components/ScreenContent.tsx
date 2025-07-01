@@ -16,6 +16,7 @@ export const ScreenContent = ({ title, path, children }: ScreenContentProps) => 
       <View className={styles.separator} />
       <EditScreenInfo path={path} />
       {children}
+      <Text className="bg-purple-500 text-4xl">Hello from native directory</Text>
       <HomeScreen />
     </View>
   );
